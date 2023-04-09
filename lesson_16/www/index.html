@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <script Language="Javascript">
+   function fwd()
+    {document.location="/cgi-bin/fwd1.cgi";}
+   function rev()
+    {document.location="/cgi-bin/rev1.cgi";}
+   function right()
+    {document.location="/cgi-bin/right1.cgi";}
+   function left()
+    {document.location="/cgi-bin/left1.cgi";}
+   function stop()
+    {document.location="/cgi-bin/stop1.cgi";}
+   </script>
+  </head>
+ <body>
+  <div style="text-align:center">
+   <h1>Robot Controls</h1>
+   <img src="/images/forward.jpg" onpointerdown="fwd()" onpointerup="stop()">
+   <br>
+   <img src="/images/left.jpg" onpointerdown="left()" onpointerup="stop()">
+   <img src="/images/stop.jpg" onpointerdown="stop()" onpointerup="stop()">
+   <img src="/images/right.jpg" onpointerdown="right()" onpointerup="stop()">
+   <br>
+   <img src="/images/reverse.jpg" onpointerdown="rev()" onpointerup="stop()">
+  </div>
+ </body>
+</html>
